@@ -1,1 +1,3 @@
-HI, THis is ROshan & This is a record of all my projects.
+HI, THis is ROshan & This is a record of all my projects. There are  two Types of Projects in here: SQL & Machine Learning.
+
+I have used the Git for the projects.
