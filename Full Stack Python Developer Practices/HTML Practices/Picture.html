@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Element</title>
+</head>
+<body>
+    <!-- As per Device diff. picture are dispalyed in diff. way  based on device size
+    
+    picture tag helps us in this case -->
+
+
+<!-- Using Different Pictures for Different Screen Size -->
+    <picture>
+        <source media="(min-width: 650px)" srcset= "./Images/Snow.jpg">
+        <source media="(min-width: 500px)" srcset= "./Images/City.jpeg">
+        <img src="Images/Summer.webp" alt="Summer Picture" title="Summer">
+    </picture>
+</body>
+</html>
