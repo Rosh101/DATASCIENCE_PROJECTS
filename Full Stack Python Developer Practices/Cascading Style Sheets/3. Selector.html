@@ -1,0 +1,68 @@
+<!-- Types of CSS 
+i. Universal Selector (*)
+ii. Element Selector 
+iii. Class Selector (.)
+iv. Id Selector (#)
+v. Grouping Selector
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    
+
+    <style>
+        /* Element Selector */
+        p{ color: blueviolet;
+            
+        }
+        /* Class Selector */        
+        .demo1{
+            color: red;
+        }
+        .demo2{
+            color: green;
+        }
+        .demo3{
+            font-size: 25px;
+        }
+        .demo4{
+            background-color: brown;
+        }
+        /* ID Selector example */
+        #sample1{
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+        div{
+            color: aqua;
+        }
+        /* Group Selector Examples */
+        div,span,b{
+            color: orange;
+        }
+        .s1,#b1{
+            text-decoration-line: line-through;
+        }
+    </style>
+</head>
+<!-- Class is reusable, ID must must be unique -->
+<body>
+    <p class="demo1">'Hello'</p>
+    <p class="demo2 demo3">Hey, What's your Name?</p>
+    <h2 class="demo1">Hello World</h2>
+    <h3 class="demo1 demo3 demo4">The World is in Better Place than Before.</h3>
+    <h4 id="sample1">We are Learning CSS</h4>
+    <div>Hi!</div>
+    <span class="s1">Hello_</span>
+    <b id="b1">This is a bold tag.</b>
+    <div> Hellooooo.....</div>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- Lable Tag inside form provides the label Name
+    Input provides the Valid input format and "ID" attribute activates the form box when clicked 
+    "required" attribute for validation
+    "Name" allows to capture data in teh DB-->
+    <form action="https://formsubmit.co/roshankhadka787@gmail.com" method="POST" >
+        <fieldset>
+            <legend ><h4>Personal Information</h4></legend>
+        <label for="fname" >First Name</label>
+        <input type="text" name="First Name" id="fname" placeholder="Enter your First Name" required>
+        <br>
+        <label for="lname">Last Name</label>
+        <input type="text" name="Last Name" id="lname"
+        placeholder="Enter your Last Name">
+        <br>
+        <label for="PW" >Password</label>
+        <input type="password" name="Password" id="PW" placeholder="Enter your Password">
+        <br>
+        <label for="email"  >Email</label>
+        <input name="Email" type="email" id="email"
+        placeholder="Enter your email">
+        <br>
+        <label for="ph" >Contact No.</label>
+        <input type="number" name="Phone no." id="ph" placeholder="Enter your phone number">
+        <br>
+        <label for="DOB" >Date of Birth</label>
+        <input name="DOB" type="date" id="DOB" placeholder="">
+        <br>
+        
+        
+        <label for="city">City</label>
+        <select name="City" id="city">
+            <option value="Kathmandu"> KTM</option>
+            <option value="Pokhara"> PKR</option>
+            <option value="Patan"> PTN</option>
+            <option value="Butwal"> BTW</option>
+        </select>
+        <br>
+        <br>
+        <!-- Name attributes identifies values as category -->
+        <!-- Checked attribute sets the default value and overrides when new progressive attribute is introduces -->
+        <label for="">Gender</label> <br>
+
+        <input type="radio" value= "M" name="gender" checked>Male
+        <input type="radio" value= "F" name="gender" checked >Female
+        <input type="radio" Value= 'Others' name="gender"> Other
+        <br>
+        <!-- Radio type allows to choose only one option while checkbox allows multiple selection -->
+
+
+        <label for="">Choose any two</label><br>
+        <input type="checkbox" name="subject1" value="HTML">HTML
+        <input type="checkbox" name="subject2" value="CSS">CSS
+        <input type="checkbox" name="subject3" value="BOOTSTRAP">BOOTSTRAP
+        <input type="checkbox" name="subject4" value="JSON">JSON
+        <input type="checkbox" name="subject5" value="PYTHON">PYTHON
+        <br>
+        <!-- submit option to submit
+        choose file to select & upload the file
+        reset to reset teh chosen file -->
+        <input type="submit"> 
+        <input name="File" type="file">
+        <input type="reset">
+        
+
+
+        <!-- Value data will be transfered to Database when respective options are clicked -->
+        <!-- fieldset provides the borderline -->
+    </fieldset>
+        
+
+    </form>
+</body>
+</html>

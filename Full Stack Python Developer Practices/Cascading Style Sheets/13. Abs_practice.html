@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Practice</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            border: 1px solid antiquewhite;
+            position: relative;
+            overflow: hidden;
+            /* Overflow: Hidden  limits the zooming/other action to container  */
+
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            transition: all 3s;
+            /* Transition allows the movement to given value time frame . 
+            Here it's 3 seconds( all 3s)
+            */
+        }
+        .demo{
+            height: 200px;
+            width: 200px;
+            background-color: antiquewhite;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            display: none;
+
+        }
+        .container:hover img{
+            transform: scale(3,1.5);
+            display: block;
+        }
+
+    </style>
+    
+
+</head>
+<body>
+    <div class="container"><img src="https://cdn.wallpapersafari.com/62/88/YhiKRS.jpg" alt="">
+        <div class="demo">
+            It's percious to be with Nature. Green Tours will provide you the lush natureful trips that you will remember for the rest of your life.
+        </div>
+    </div>
+    
+</body>
+</html>

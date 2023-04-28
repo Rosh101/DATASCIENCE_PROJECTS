@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex & Navbar   </title>
+    <style>
+        .container{
+            display: flex;
+            background-color: whitesmoke;
+            justify-content: space-between;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            align-items: center;
+            
+        }
+        a{
+            font-size: 25px;
+            color: darkolivegreen;
+            text-decoration: none;
+        }
+        ul{
+            display: flex;
+            border: 1px solid black;
+            justify-content: space-evenly;
+            width: 500px;
+            
+        }
+        li{
+            list-style: none;
+        }
+        h2{
+            margin-right: 30px;
+        }
+        a:hover{
+            color: red;
+            border-bottom: 2px solid black;
+        }
+        div{
+            margin-left: 50px;
+        }
+        .roshan{
+            height: 500px;
+            background-image: url(https://images3.alphacoders.com/250/25007.jpg);
+            background-size: 100%;
+        }
+        h3{
+            text-decoration: dotted;
+            background-color: yellowgreen;
+        }
+        .demo1{
+            height: 50px;
+            width: 50px;
+            border-radius: 100% 100%;
+            background-color: goldenrod;
+            border: 1px solid black;
+            padding: 50px;
+            margin-right: 0px;
+            position: fixed;
+            float: right;
+            display: flex;
+            bottom: 0;
+            right: 0;
+            
+        }
+        .Nav{
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Nav"><img src="https://th.bing.com/th/id/OIP.et1XWTqQVKMTSjbhLMqToQD5D5?pid=ImgDet&rs=1" height="40px" alt="Spotify" margin-right: 0></div>
+
+        <h2 ><li>Music On Go!</li>
+        <li>Weekend Bangers....</li> </h2>
+
+        <h3 >Curated Just for You</h3>
+        <ul>
+            <li><a href="">Home</a>
+                <ul class="dropdown">
+                    <li >Genere
+                        <ul class="Subdropdown">
+                            <li>Pop</li>
+                            <li>Rock</li>
+                            <li>Country</li>
+                            <li>Folk</li>
+                            <li>Soul</li>
+                            <li>Blues</li>
+                            <li>Metal</li>
+                            <li>Jazz</li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </li>
+            <li><a href="">Info</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            
+          
+        </ul>
+          
+    </div>
+    
+    <div class="roshan" >
+    <h2 >Experience the Greatest of Our Time</h2>    
+    </div>
+    <div class="demo1">Subscribe</div>
+    
+</body>
+</html>

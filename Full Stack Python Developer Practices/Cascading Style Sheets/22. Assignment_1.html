@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya</title>
+    <style>
+        .container{
+            background-color: #7fd0ff;
+            display: flex;
+            justify-content: space-between;
+        }
+        .list{
+            /* border: 1px solid red; */
+            width: 400px;
+            display: flex;
+            justify-content: space-evenly;
+        
+        }
+        a{
+            text-decoration: none;
+            font-size: 22px;
+        }
+        li{
+            list-style: none;
+        }
+        .dropdown{
+            position: absolute;
+            background-color: rosybrown ;
+            top:100%;
+            left: -10px;
+            display: none;
+            padding: 10px;
+           
+
+        }
+        .dropdown1{
+            position: absolute;
+            background-color: aqua;
+            top:100%;
+            left: -10px;
+            display: none;
+            padding: 10px;
+            /* border: 1px solid red; */
+           
+
+        }
+        .dropdown li{
+            text-align: start;
+            width: 80px;
+           
+        }
+        .dropdown1 li{
+            text-align: start;
+            width: 80px;
+            
+           
+        }
+        .list1{
+            position: relative;
+        
+           
+        }
+        .list2{
+            position: relative;
+        }
+        li:hover .line{
+            color: red;
+            border-bottom: 1px solid black;
+        }
+        li:hover .dropdown
+         {
+            display: block;
+        }
+        li:hover .dropdown1
+        {
+            display: block;
+        }
+        .subdropdown{
+            text-align: start;
+            background-color: greenyellow;
+            position: absolute;
+            top:0;
+            left: 100%;
+            display: none;
+            padding-left: 10px;
+            margin-top: 15px;
+            padding-bottom: 5px;
+
+        }
+        .dropdown li:hover .subdropdown{
+            display: block;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Logo</h2>
+        <ul class="list">
+            <li class="list1"><a href="" class="line">Home</a>
+                <ul class="dropdown">
+                        <li><a href="">Laptops</a>
+                        <ul class="subdropdown">
+                            <li><a href="">Dell</a></li>
+                            <li><a href="">Acer</a></li>
+                            <li><a href="">Apple</a></li>
+                            <li><a href="">Lenovo</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="">Dress</a></li>
+                        <li><a href="" >Mobiles</a></li>
+                        <li><a href="">Shoes</a>    </li>
+                </ul>
+            </li>
+            <li class="list2"><a href="" class="line">About</a>
+                <ul class="dropdown1">
+                        <li><a href="">History</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Awards</a></li>
+                        <li><a href="">Programs</a>    </li>
+                </ul>
+            </li>
+            <li><a href="" class="line">Information</a></li>
+            <li><a href="" class="line">Contact us</a></li>
+            
+        </ul>
+    </div>
+</body>
+</html>

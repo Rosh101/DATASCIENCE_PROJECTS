@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Eagles</title>
+    <style>
+        .container{
+            background-size: 100%;;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+        }
+        .h_content{
+            width: 700px;
+            justify-content: space-evenly;
+            display: flex;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            font-style: oblique;
+            font-size: 20px;
+        }
+        .list1{
+            position: relative;
+        }
+       .drop{
+        background-color: burlywood;
+        top: 50%;
+        left: -30px;
+        text-align: start;
+        position: absolute;
+        display: none;
+       }
+       .subdrop{
+        text-align: start;
+        position: absolute;
+        display: none;
+        top: 10%;
+        left: 40px;
+        
+       }
+       li:hover .drop{
+        display: block;
+       }
+       li:hover .subdrop{
+        display: block;
+       }
+       .epic{
+        display: flexbox;
+        background-size: 100%;
+       }
+
+    .searchbar {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    border-radius: 10px;
+    text-align: left;
+    }
+
+    input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    }
+
+    button[type="submit"] {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    color: whitesmoke;
+    font-size: 16px;
+    cursor: grabbing;
+    }
+
+    button[type="submit"]:hover {
+    background-color: skyblue;
+    }
+    h2{
+        margin-left: 40px;
+    }    
+    .sticky{
+        height: 100px;
+        width: 100px;
+        background-color: blanchedalmond;
+        border-radius: 100%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: 5px solid black;
+        text-align: center;
+        word-wrap: break-word;
+        padding: 40px;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <h2 >Experience The Paradise...</h2>
+        <ul class="h_content">
+            <li class="list1"><a href="">About Us</a>
+            <ul class="drop">
+                <li><a href="">Story</a>
+                <ul class="subdrop"> 
+                <ul>Travely</ul>
+                <ul>Foodie</ul>
+                <ul>Adventurer</ul>
+                <ul>Tailor</ul>
+                        
+                </ul>
+                </li>
+                <li><a href="">Founders</a></li>
+                <li><a href="">Epic Stories</a></li>
+                <li><a href="">Awards</a></li>
+
+            </ul>
+            </li>
+
+
+
+            <li><a href="">Village Explorer</a></li>
+            <li><a href="">Cultural Explorer</a></li>
+            <li><a href="">Treker</a></li>
+            <li><a href="">Hiker</a></li>
+            <li><a href="">Nature Immersion</a></li>
+        </ul>
+    </div>
+
+    <div class="epic"><img src="https://www.whats-your-sign.com/wp-content/uploads/2021/06/Serenity1-735x400.jpg" alt="" width="100%">
+        <div class="searchbar">
+            <input type="text" placeholder="What do you want...">
+            <button type="submit">Search</button>
+          </div>
+    </div>
+    <div class="sticky">Talk to our Agents!</div>
+</body>
+</html>
